@@ -1,0 +1,125 @@
+/* Reset e configuração básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #217c24;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between; /* Garante que os itens dentro do header fiquem nas extremidades */
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Distribui o título e os botões nas extremidades do header */
+    width: 100%;
+}
+
+.header-title {
+    flex: 1; /* Permite que o título ocupe o espaço disponível */
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1rem; /* Espaço entre os botões */
+}
+
+.home-button,
+.cart-button {
+    background-color: #29b546;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.6rem 1.50rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover,
+.cart-button:hover {
+    background-color: #1c6424;
+}
+
+main {
+    margin-top: 6rem; /* Ajusta a margem para não sobrepor o header fixo */
+    padding: 2rem;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content:baseline;
+}
+
+.product {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+}
+
+.product-images {
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.product-images img {
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.product-images img:not(.active) {
+    opacity: 0;
+}
+
+.product-info {
+    padding: 0.8rem;
+}
+
+.product-info h2 {
+    font-size: 1.30rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-info p {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #29b546;
+}
+
+.buy-button {
+    background-color: #29b546;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #1e8e2b;
+}

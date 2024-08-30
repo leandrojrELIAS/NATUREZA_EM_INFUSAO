@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="catalogo.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-title">
+                <h1>Catálogo de Produtos</h1>
+            </div>
+            <div class="header-buttons">
+                <a href="index.html" class="home-button">Voltar para Home</a>
+                <a href="#" class="cart-button">Carrinho <span id="cart-count">0</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-gallery">
+            <!-- Product 1 -->
+            <div class="product">
+                <div class="product-images">
+                    <img src="images/remedio1.jpg" alt="Produto 1" class="active">
+                </div>
+                <div class="product-info">
+                    <h2>Pílulas de Revitalização 60 caps</h2>
+                    <p>Revitalizam e nutrem o corpo.</p><P>Indicado para, cansaço fisico e mental,fadiga e insonia </P>
+                    <p class="price">R$ 39,90</p>
+                    <button class="buy-button" data-price="39.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product">
+                <div class="product-images">
+                    <img src="images/remedio2.jpg" alt="Produto 2" class="active">
+                </div>
+                <div class="product-info">
+                    <h2>Pílulas da juventude 60 caps</h2>
+                    <p>Revitalizam e nutrem o corpo.</p><P>Auxilia na recuperaçao, muscular e celular </P>
+                    <p class="price">R$ 99,90</p>
+                    <button class="buy-button" data-price="39.90">Adicionar ao Carrinho</button>
+                    <!--product 3-->
+                </div>
+            </div>
+            <!-- Product 3 -->
+             <div class="product">
+                <div class="product-images">
+                    <img src="images/remedio3.jpg" alt="Produto 3" class="active">
+                </div>
+                <div class="product-info">
+                    <h2>Pílulas para menopausa 60 caps</h2>
+                    <p>Revitalizam e nutrem o corpo.</p><P>Auxilia no periodo de cólicas e dores nos periodos menstruais.</P>
+                    <p class="price">R$ 29,90</p>
+                    <button class="buy-button" data-price="39.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+             <div class="product">
+                <div class="product-images">
+                    <img src="images/remedio4.jpg" alt="Produto 4" class="active">
+                </div>
+                <div class="product-info">
+                    <h2>Pílulas de rejuvenescimento 60 caps</h2>
+                    <p>Revitalizam e nutrem o corpo.</p><P>Auxilia na recuperaçao, muscular e celular.</P>
+                    <p class="price">R$ 89,90</p>
+                    <button class="buy-button" data-price="39.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <!-- Product 5 -->
+             <div class="product">
+                <div class="product-images">
+                    <img src="images/remedio5.jpg" alt="Produto 5" class="active">
+                </div>
+                <div class="product-info">
+                    <h2>Pílulas de resistência 60 caps</h2>
+                    <p>Revitalizam e nutrem o corpo.</p><P>Auxilia na recuperaçao, dos ossos, cabelos e unhas.</P>
+                    <p class="price">R$ 79,90</p>
+                    <button class="buy-button" data-price="39.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <!-- Product 6 -->
+             <div class="product">
+                <div class="product-images">
+                    <img src="images/remedio6.jpg" alt="Produto 6" class="active">
+                </div>
+                <div class="product-info">
+                    <h2>Pílulas de fortalecimento 60 caps</h2>
+                    <p>Revitalizam e nutrem o corpo.</p><P>Auxilia na recuperaçao muscular, alem de ser termogenico.</P>
+                    <p class="price">R$ 109,90</p>
+                    <button class="buy-button" data-price="39.90">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="catalogo.js"></script>
+</body>
+</html>
